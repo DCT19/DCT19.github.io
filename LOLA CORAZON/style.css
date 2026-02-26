@@ -932,4 +932,45 @@ section:not(:last-child) {
 
 .feature-content a:hover {
   color: #2c3a2f;
+
+}
+
+/* MOBILE FIX FOR ROOM DETAIL PAGE */
+@media (max-width: 768px) {
+
+  .room-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .room-left,
+  .room-right {
+    width: 100%;
+  }
+
+  .room-right {
+    text-align: center;
+  }
+
+  .room-description-block h2,
+  .room-amenities h2 {
+    text-align: center;
+  }
+
+  .room-description-block p {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .amenities-grid {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .booking-card {
+    position: relative;   /* remove sticky behavior on mobile */
+    top: auto;
+    margin: 0 auto;
+    max-width: 400px;
+  }
 }
