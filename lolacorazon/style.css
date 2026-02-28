@@ -69,7 +69,7 @@ h3 {
 
 /* NAVBAR */
 nav {
-  position: fixed;
+  position: fixed !important;
   width: 100%;
   padding: 20px 60px;
   display: flex;
@@ -77,8 +77,6 @@ nav {
   align-items: center;
   background: #2c3a2f;
   z-index: 1000;
-
-
 }
 
 .logo {
@@ -1100,4 +1098,5 @@ nav {
 .hamburger.active span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
+
 
